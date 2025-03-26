@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MEG Güvenlik Sistemleri - Güvenlik çözümleri sunan profesyonel hizmetler">
+  <title>MEG Güvenlik Sistemleri</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="py-3">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <!-- Logo -->
+        <img class="logo mb-3 mb-md-0" src="logo.png" alt="Meg Güvenlik Sistemleri" style="max-width: 400px;">
+
+        <!-- Navbar -->
+        <nav class="w-100">
+          <ul class="nav justify-content-center flex-wrap">
+            <li class="nav-item">
+              <a href="#services" class="nav-link text-dark">Hizmetler</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link text-dark">Projeler</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-dark">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-dark">İletişim</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white py-5" style="background-color: #3AB54A;">
+    <div class="hero-container">
+      <h2 class="display-4">Güvenliğiniz Bizim İçin Önceliklidir</h2>
+      <p class="lead">Profesyonel güvenlik çözümleri ile hayatınızı koruyoruz.</p>
+      <a href="#contact" class="btn btn-warning btn-lg">Bize Ulaşın</a>
+    </div>
+  </section>
+
+  <section id="products" class="py-5">
+    <div class="container text-center">
+      <h3 class="mb-5">Ürünlerimiz</h3>
+
+      <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row" id="productCardsContainer">
+              <!-- Kartlar dinamik olarak buraya eklenecek -->
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hizmetler -->
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h3 class="mb-5">Hizmetlerimiz</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="ev-guvenlik.jpg" class="card-img-top" alt="Güvenlik Kamerası">
+            <div class="card-body">
+              <h5 class="card-title">Güvenlik Kamerası Kurulumu</h5>
+              <p class="card-text">Ev ve iş yeriniz için güvenlik kameraları kuruyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="yangın-alarm.png" class="card-img-top" alt="Alarm Sistemi">
+            <div class="card-body">
+              <h5 class="card-title">Alarm Sistemleri</h5>
+              <p class="card-text">Hızlı müdahale için alarm sistemleri sağlıyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="gks.jpg" class="card-img-top" alt="Giriş Kontrol">
+            <div class="card-body">
+              <h5 class="card-title">Giriş Kontrol Sistemleri</h5>
+              <p class="card-text">Güvenli giriş çıkış kontrolü sağlıyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projeler -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container text-center">
+      <h3 class="mb-5">Projelerimiz</h3>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="kamera_sistemi_1.gif" class="card-img-top" alt="Proje 1">
+            <div class="card-body">
+              <p class="card-text">Projelerimizin başarı hikayelerini keşfedin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="cm200p-surveillance.gif" class="card-img-top" alt="Proje 2">
+            <div class="card-body">
+              <p class="card-text">Hizmetlerimizin gücünü görün.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="https://wa.me/905396738155" target="_blank" class="whatsapp-icon">
+    <img src="whatsap.jpg" alt="WhatsApp" />
+  </a>
+
+
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h3 class="mb-5">Hakkımızda</h3>
+      <p>MEG Güvenlik Sistemleri olarak, yılların getirdiği tecrübe ve bilgi birikimimizle güvenliğinizi sağlamak için
+        varız. Hayatınızı ve değerlerinizi korumanın önemini biliyoruz; bu nedenle her projeye aynı özeni ve titizliği
+        gösteriyoruz.
+
+        Müşterilerimizin güvenliği bizim önceliğimizdir. Evlerden iş yerlerine, küçük işletmelerden büyük projelere
+        kadar her alanda profesyonel çözümler sunarak güven içinde yaşamanızı sağlıyoruz. Alanında uzman ekibimiz,
+        güncel teknolojileri takip ederek yenilikçi güvenlik çözümleri geliştiriyor ve sürekli kendimizi yeniliyoruz.
+
+        MEG Güvenlik olarak hedefimiz; müşterilerimizin ihtiyaçlarını doğru anlayıp, güvenli ve huzurlu yaşam alanları
+        yaratmaktır. Kaliteden ve güvenilirlikten ödün vermeden, projelerimizi başarıyla tamamlayarak sektördeki lider
+        konumumuzu güçlendirmeye devam ediyoruz.
+
+        Güvenliğiniz emin ellerde. MEG Güvenlik Sistemleri ile huzuru yaşayın.</p>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="contact" class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="text-center mb-4">
+            <h3 class="display-6">Bizimle İletişime Geçin</h3>
+            <p class="lead">Herhangi bir sorunuz ya da öneriniz varsa, lütfen aşağıdaki formu doldurun. En kısa sürede
+              geri dönüş yapacağız.</p>
+          </div>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="form-label">Adınız</label>
+              <input type="text" class="form-control" id="name" placeholder="Adınız" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label">E-posta Adresiniz</label>
+              <input type="email" class="form-control" id="email" placeholder="E-posta" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label">Mesajınız</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Mesajınızı buraya yazın"
+                required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Gönder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 MEG Güvenlik Sistemleri | <a href="#" class="text-white">Gizlilik Politikası</a> | <a href="#"
+          class="text-white">Kullanım Şartları</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Custom JS (Animasyonlar) -->
+  <script src="script.js"></script>
+</body>
+
+</html>

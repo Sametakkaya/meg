@@ -1,0 +1,131 @@
+/* Hero Section */
+.hero {
+    background-color: #3AB54A;
+    color: rgb(255, 255, 255);
+    padding: 100px 0;
+}
+/* Ürünler Kartları */
+#products .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#products .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#products .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+/* Carousel item içindeki satırı flex olarak düzenliyoruz */
+.carousel-item {
+  padding: 20px 0;
+}
+
+/* Her slider item'ın içine 4 kartı yerleştir */
+.carousel-inner .row {
+  display: flex;
+  flex-wrap: wrap; /* Kartlar taşarsa alt satıra geçebilsin */
+  justify-content: space-between;
+}
+
+/* Desktop ve tablet için 4 kart yan yana olacak */
+.carousel-item .col-md-3 {
+  flex: 0 0 23%; /* 4 kart için */
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+/* Mobilde 2 kart yan yana olacak şekilde */
+@media (max-width: 767px) {
+  .carousel-item .col-md-3 {
+    flex: 0 0 48%; /* 2 kart yan yana */
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+
+/* Ok tuşları */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #a3a3a3; 
+    border-radius: 30%;
+    padding: 18px;
+}
+
+/* Hizmetler */
+#services .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+}
+
+#services .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Projeler */
+#projects .card {
+    border: none;
+}
+
+#projects .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+}
+.logo{
+ width: 10%;
+}
+.hero {
+  position: relative;
+  background-image: url('guvenlik-kamera-banner.jpg'); /* GIF'in yolunu buraya ekleyin */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Hafif kararmayı sağlar */
+  backdrop-filter: blur(8px); /* Blur efekti ekler */
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2; /* Metnin üzerine gelmemesi için */
+}
+/* WhatsApp ikonu yerine resim için stil */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ekranın alt kısmından mesafe */
+  left: 20px; /* Ekranın sol kısmından mesafe */
+  z-index: 9999; /* Diğer öğelerin üstünde görünmesini sağlar */
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon img {
+  width: 50px; /* Resmin genişliği */
+  height: 50px; /* Resmin yüksekliği */
+  border-radius: 50%; /* Resmi yuvarlak yapmak için */
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Hover efekti: Resmi biraz büyütür */
+}
