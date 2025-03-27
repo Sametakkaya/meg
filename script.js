@@ -1,11 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const serviceCards = document.querySelectorAll('.card');
-    serviceCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
-    });
-    var myCarousel = new bootstrap.Carousel(document.getElementById("productCarousel"), {
-        interval: 5000, // 5 saniyede bir geçiş
-        pause: "hover", // Üzerine gelince durdur
-        wrap: true    // Sonsuz döngü
-    });
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(this);
+  
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  fetch('https://formspree.io/f/xgvazgzg', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Mesajınız başarıyla gönderildi!");
+    } else {
+      alert("Mesaj gönderilemedi, lütfen tekrar deneyin.");
+    }
+  })
+  .catch(error => {
+    console.error('Hata:', error);
+    alert("Mesaj gönderilemedi.");
+  });
 });
