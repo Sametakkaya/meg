@@ -102,7 +102,7 @@ footer {
 .whatsapp-icon {
   position: fixed;
   bottom: 20px; /* Ekranın alt kısmından mesafe */
-  left: 20px; /* Ekranın sol kısmından mesafe */
+  right: 20px; /* Ekranın sol kısmından mesafe */
   z-index: 9999; /* Diğer öğelerin üstünde görünmesini sağlar */
   transition: transform 0.3s ease-in-out;
 }
